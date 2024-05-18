@@ -11,8 +11,16 @@ export function connectToMongo(callback) {
     })
 };
 
+export function getDB(dbName = process.env.DB_NAME) {
+    return client.db(dbName)
+};
+
 function signalHandler() {
     console.log("Closing MongoBD Connection...")
     client.close();
     process.exit();
 };
+
+process.on("SIGINT", signalHandler)
+process.on("SIGTERM", signalHandler)
+process.on("SIGQUIT", signalHandler)
