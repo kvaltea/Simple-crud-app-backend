@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 mongoose.connect("mongodb+srv://kotobayk:cyfUfutGQaLHA2Ze@cluster0.ztj7wpj.mongodb.net/Node-API?retryWrites=true&w=majority&appName=Cluster0")
     .then(() => {
         console.log("Connected to database!");
-        app.listen(4000, () => {
+        app.listen(port, () => {
             console.log("Server is running on port 4000");
         });
     })
