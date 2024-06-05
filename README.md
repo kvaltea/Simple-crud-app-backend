@@ -6,8 +6,8 @@ In the project directory, you can run:
 
 ### 'npm run serve'
 To start the app in dev mode.
-Open http://localhost:4000 to view it in the browser.
+Open http://localhost:3000 to view it in the browser.
 
 ### 'npm run dev'
 For product mode.
-Open http://localhost:4000 or http://localhost:4000/api/products to view it in the browser.
+Open http://localhost:3000 or http://localhost:3000/api/products to view it in the browser.
