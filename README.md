@@ -14,3 +14,4 @@ Open http://localhost:3000 or http://localhost:3000/api/products to view it in t
 
 ## APP on Render
 https://simple-crud-app-backend-se0p.onrender.com
+All products: https://simple-crud-app-backend-se0p.onrender.com/api/products
