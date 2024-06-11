@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "df3fb60c-b3cd-479c-8cc9-6d16e9b3aa7d",
+		"name": "Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27529974",
+		"_collection_link": "https://www.postman.com/winter-robot-530085/workspace/test-api/collection/27529974-df3fb60c-b3cd-479c-8cc9-6d16e9b3aa7d?action=share&source=collection_link&creator=27529974"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "Check status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-crud-app-backend-se0p.onrender.com",
+							"protocol": "https",
+							"host": [
+								"simple-crud-app-backend-se0p",
+								"onrender",
+								"com"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Add Product",
+			"item": [
+				{
+					"name": "Add API",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\": \"Doughnuts\",\r\n\t\"quantity\": 12,\r\n\t\"price\": 4.99\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://simple-crud-app-backend-se0p.onrender.com/api/products",
+							"protocol": "https",
+							"host": [
+								"simple-crud-app-backend-se0p",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get all Product",
+			"item": [
+				{
+					"name": "Get API",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-crud-app-backend-se0p.onrender.com/api/products",
+							"protocol": "https",
+							"host": [
+								"simple-crud-app-backend-se0p",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Product By ID",
+			"item": [
+				{
+					"name": "Get ProdByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://simple-crud-app-backend-se0p.onrender.com/api/products/6660c0bb1a6bdcace393e905",
+							"protocol": "https",
+							"host": [
+								"simple-crud-app-backend-se0p",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"6660c0bb1a6bdcace393e905"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update a Product",
+			"item": [
+				{
+					"name": "Update API",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://simple-crud-app-backend-se0p.onrender.com/api/products/6660c0bb1a6bdcace393e905",
+							"protocol": "https",
+							"host": [
+								"simple-crud-app-backend-se0p",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"6660c0bb1a6bdcace393e905"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update API",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://simple-crud-app-backend-se0p.onrender.com/api/products/6660c0bb1a6bdcace393e905",
+							"protocol": "https",
+							"host": [
+								"simple-crud-app-backend-se0p",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"6660c0bb1a6bdcace393e905"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete a Product",
+			"item": [
+				{
+					"name": "Delete a Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://simple-crud-app-backend-se0p.onrender.com/api/products/6660c0bb1a6bdcace393e905",
+							"protocol": "https",
+							"host": [
+								"simple-crud-app-backend-se0p",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"6660c0bb1a6bdcace393e905"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
