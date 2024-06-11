@@ -47,25 +47,27 @@ const updateProduct = async (req, res) => {
 
 const selectiveUpdateProduct = async (req, res) => {
     try {
-        const { id } = req.params.id * 1;
+        const { id } = req.params;
         const { name, quantity, price } = req.body;
+        const options = { new: true };
 
-        const product = await Product.findOneAndUpdate({ name: "coffee" }, { $set: { name: "nuts" } });
+        const update = {};
+        if (name) update.name = name;
+        if (quantity) update.quantity = quantity;
+        if (price) update.price = price;
 
-        if (!product) {
+        const updatedProduct = await Product.findByIdAndUpdate(id, update, options);
+
+        if (!updatedProduct) {
             return res.status(404).json({ message: "Product not found" });
         }
 
-        if (name) product.name = name;
-        if (quantity) product.quantity = quantity;
-        if (price) product.price = price;
-
-        const updatedProduct = await Product.findById(id);
         res.status(200).json(updatedProduct);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
 }
+
 
 const deleteProduct = async (req, res) => {
     try {
